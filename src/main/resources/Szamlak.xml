@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<szamlak>
+   <szamla>
+      <szamlaszam>1</szamlaszam>
+      <egyenleg>1970.0</egyenleg>
+      <elmaradas>0.0</elmaradas>
+      <tulajdonos>Kis Döme</tulajdonos>
+      <letrehozasDatuma>2016-05-20</letrehozasDatuma>
+      <tulajdonosSzuletese>1984-09-24</tulajdonosSzuletese>
+      <tulajdonosSzuletesiHely>Debrecen</tulajdonosSzuletesiHely>
+      <tulajdonosAnyjaNeve>Böhöm Erzsébet</tulajdonosAnyjaNeve>
+      <fizetesiOsztaly>Alacsony</fizetesiOsztaly>
+      <utolsoModositas>2016-05-20</utolsoModositas>
+   </szamla>
+   <szamla>
+      <szamlaszam>2</szamlaszam>
+      <egyenleg>5000.0</egyenleg>
+      <elmaradas>0.0</elmaradas>
+      <tulajdonos>Bármi Áron</tulajdonos>
+      <letrehozasDatuma>2016-05-20</letrehozasDatuma>
+      <tulajdonosSzuletese>1979-05-29</tulajdonosSzuletese>
+      <tulajdonosSzuletesiHely>Debrecen</tulajdonosSzuletesiHely>
+      <tulajdonosAnyjaNeve>Lehetetlen Erika</tulajdonosAnyjaNeve>
+      <fizetesiOsztaly>Kozepes</fizetesiOsztaly>
+      <utolsoModositas>2016-05-20</utolsoModositas>
+   </szamla>
+   <szamla>
+      <szamlaszam>3</szamlaszam>
+      <egyenleg>48950.0</egyenleg>
+      <elmaradas>0.0</elmaradas>
+      <tulajdonos>Névtér Gertrúd</tulajdonos>
+      <letrehozasDatuma>2016-05-20</letrehozasDatuma>
+      <tulajdonosSzuletese>1980-05-07</tulajdonosSzuletese>
+      <tulajdonosSzuletesiHely>Budapest</tulajdonosSzuletesiHely>
+      <tulajdonosAnyjaNeve>Pom Bíbor</tulajdonosAnyjaNeve>
+      <fizetesiOsztaly>Magas</fizetesiOsztaly>
+      <utolsoModositas>2016-05-20</utolsoModositas>
+   </szamla>
+</szamlak>

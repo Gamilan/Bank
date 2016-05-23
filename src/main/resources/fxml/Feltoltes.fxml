@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.pt.Bank.view.FeltoltesController">
+   <children>
+      <Label layoutX="42.0" layoutY="92.0" text="Feltöltés összege:" AnchorPane.leftAnchor="15.0" />
+      <Button layoutX="309.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleOk" prefWidth="80.0" text="Ok" AnchorPane.rightAnchor="15.0" />
+      <Button layoutX="309.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleCancel" prefWidth="80.0" text="Visszalép" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="feltoltes" layoutX="141.0" layoutY="87.0" prefHeight="25.0" prefWidth="125.0" />
+   </children>
+</AnchorPane>

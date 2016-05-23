@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.pt.Bank.view.SzamlaController">
+   <children>
+      <SplitPane dividerPositions="0.4080267558528428" prefHeight="575.0" prefWidth="800.0">
+        <items>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="350.0">
+               <children>
+                  <TableView fx:id="szamlaTabla" layoutY="-3.0" onSort="#initialize" prefHeight="525.0" prefWidth="350.0">
+                  	<placeholder>
+            			<Label text="" />
+        			</placeholder>
+                    <columns>
+                      <TableColumn fx:id="szamlaSzamOszlop" prefWidth="120.0" text="Számlaszám" />
+                      <TableColumn fx:id="tulajdonosOszlop" prefWidth="120.0" text="Tulajdonos" />
+                        <TableColumn fx:id="egyenlegOszlop" prefWidth="110.0" text="Egyenleg" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="220.0" layoutY="535.0" mnemonicParsing="false" onAction="#szamlaTorles" text="Számla törlése" />
+                  <Button layoutX="20.0" layoutY="535.0" mnemonicParsing="false" onAction="#szamlaKeszites" text="Új számla" />
+                  <Button layoutX="121.0" layoutY="535.0" mnemonicParsing="false" onAction="#szamlaModositas" text="Módosítás" />
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="450.0">
+               <children>
+                  <TableView fx:id="tranzakcioTabla" prefHeight="300.0" prefWidth="450.0">
+                  	<placeholder>
+            			<Label text="" />
+        			</placeholder>
+                    <columns>
+                      <TableColumn fx:id="utaloOszlop" prefWidth="160.0" text="Utaló számla" />
+                      <TableColumn fx:id="fogadoOszlop" prefWidth="160.0" text="Fogadó számla" />
+                        <TableColumn fx:id="osszegOszlop" prefWidth="130.0" text="Összeg" />
+                    </columns>
+                  </TableView>
+                  <GridPane layoutY="313.0" prefHeight="150.0" prefWidth="450.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Tulajdonos születése:" />
+                        <Label text="Anyja neve:" GridPane.rowIndex="1" />
+                        <Label text="Utolsó módosítás:" GridPane.rowIndex="2" />
+                        <Label fx:id="tulajdonosSzuleteseLabel" GridPane.columnIndex="1" />
+                        <Label fx:id="anyjaNeveLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="utolsoModositasLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Létrehozás dátuma:" GridPane.rowIndex="3" />
+                        <Label fx:id="letrehozasDatumaLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Elmaradás:" GridPane.rowIndex="4" />
+                        <Label fx:id="elmaradasLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Button layoutX="20.0" layoutY="535.0" mnemonicParsing="false" onAction="#tranzakcioKeszites" text="Új tranzakció" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" />
+                  <Button layoutX="355.0" layoutY="535.0" mnemonicParsing="false" onAction="#feltolt" text="Feltölt" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

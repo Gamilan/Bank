@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tranzakciok>
+   <tranzakcio>
+      <utalo>3</utalo>
+      <fogado>1</fogado>
+      <osszeg>1000.0</osszeg>
+      <datum>2016-05-20</datum>
+   </tranzakcio>
+</tranzakciok>
